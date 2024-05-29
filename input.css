@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(https://cdn.dribbble.com/users/13797294/screenshots/19844566/00475-2845095055-_digital_artwork_1__of_a_euphoria_inspired_aesthetic__hazy_gradient__colorful__next_4x.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+main{
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+.top{
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    h1{
+          text-align: center;
+          color: #08083A;
+          margin-bottom: 10px;
+          font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    #note{
+        padding: 10px;
+        background-color:#cdcccc;
+        color: rgb(0, 0, 0);
+        border: none;
+        border-radius: 10px;
+        box-shadow: 1px 1px 1px 1px #08083A;
+    }
+    #color{
+        background-color: rgb(177, 49, 168);
+        border-radius: 10vh;
+    }
+}
+#btn:hover{
+    color: #ffffff;
+    border: 2px solid white;
+    background: #08083A;
+}
+#btn{
+    margin-top: 10px;
+    background-color: #864CD1;
+    width: 100px;
+    height: 30px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.bottom{
+    margin: 0;
+    background: blue ;
+    height: 100vh;
+    width: 100vw;
+    padding: 10px;
+
+}
+
+
