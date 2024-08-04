@@ -1,0 +1,73 @@
+body{
+    background-color: black;
+    color: white;
+    font-family: "Jersey 10", sans-serif;
+  font-style: normal;
+}
+main{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    gap: 10px;
+    .imgs{
+        img{
+            width: 90px;
+            height: 90px;
+            cursor: pointer;
+            transition: 0.5s;
+            &:hover{
+                transform: scale(1.2);
+            }
+        }
+    }
+    .notes{
+        h1{
+            font-size: 50px;
+            font-weight: 800;
+            transition: 0.5s;
+            animation: changing 2s infinite;
+            
+        }
+    }
+}
+section{
+    border: 5px solid white;
+    border-radius: 50px;
+    animation: borderChange 5s infinite;
+    width: 95%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+   padding: 20px;
+   justify-content: center;
+   align-items: center;
+   margin-top: 50px;
+}
+@keyframes borderChange {
+    0%{
+        border: 10px solid white;
+    }
+    50%{
+        border: 10px solid aquamarine;
+    }
+    100%{
+        border: 10px solid white;
+    }
+    
+}
+/* @keyframes changing {
+    0%{
+        transform: scale(0.7);
+    }
+    50%{
+        transform: scale(1.2);
+    }
+    100%{
+        transform: scale(0.7);
+    }
+    
+} */
