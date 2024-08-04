@@ -6,29 +6,56 @@ body{
 }
 main{
     display: flex;
-    flex-direction: row;
+    flex-direction:row;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     margin-top: 50px;
     gap: 10px;
-    .imgs{
-        img{
-            width: 90px;
-            height: 90px;
-            cursor: pointer;
-            transition: 0.5s;
-            &:hover{
-                transform: scale(1.2);
+    div{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 5px;
+        margin-left:20px ;
+        .imgs{
+            img{
+                width: 90px;
+                height: 90px;
+                cursor: pointer;
+                transition: 0.5s;
+                &:hover{
+                    transform: scale(1.2);
+                }
+            }
+        }
+        .notes{
+            h1{
+                font-size: 50px;
+                font-weight: 800;
+                transition: 0.5s;
+                animation: changing 2s infinite;   
             }
         }
     }
-    .notes{
-        h1{
-            font-size: 50px;
-            font-weight: 800;
-            transition: 0.5s;
-            animation: changing 2s infinite;
-            
+    div{
+        .colors{
+            margin-right: 20px;
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            h4{
+                font-size: 20px;
+    
+            }
+            input{
+                width: 30px;
+                height: 30px;
+                cursor: pointer;
+                transition: 0.5s;
+                &:hover{
+                    transform: scale(1.2);
+                }
+            }
         }
     }
 }

@@ -1,9 +1,14 @@
 let button = document.getElementById("btn");
 let container = document.getElementById("container");
 let no = document.getElementById("no");
+let color = document.getElementById("color");
+let h4 = document.querySelector("h4");
 
 button.addEventListener("click", function(){
+
+
     no.style.display = "none";
+    h4.style.display = "none";
 
     let main = document.getElementById("main");
     main.style.justifyContent = "start";
@@ -12,6 +17,7 @@ button.addEventListener("click", function(){
     main.style.position = "sticky";
     main.style.top = "0";
     main.style.zIndex = "1";
+
     
 
 let head = document.getElementById("head");
@@ -28,6 +34,21 @@ head.style.display = "none";
      
     textarea.style.height = "300px";
     textarea.style.width = "500px";
+
+    let colorValue = color.value;
+    textarea.style.backgroundColor = colorValue;
+
+    console.log(colorValue);
+
+    if(colorValue == "#000000"){
+        textarea.style.color = "white";
+        // alert("Please choose a different color");
+    }else if(colorValue == "#ffffff"){
+        textarea.style.color = "black";
+    }
+    else{
+        textarea.style.color = "white";
+    }
 
     let del = document.createElement("button");
     del.classList.add("del");
